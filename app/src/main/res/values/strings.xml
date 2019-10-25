@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FinanceRecord</string>
+    <string name="grafik">Grafik</string>
+    <string name="home">Home</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="income_frag">income_frag</string>
+    <string name="settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="spinner_choiceCategory">
+        <item>Продукты</item>
+        <item>Вещи</item>
+        <item>Бытовая техника</item>
+        <item>Одежда</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="spinner_choicePeriod">
+        <item>Текущ месяц</item>
+        <item>Неделя</item>
+        <item>Год</item>
+        <item>За все время</item>
+    </string-array>
+
+
+</resources>
