@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 public class GrafikFragment extends Fragment {
 
+    final static String TAG = "grafik_frag_tag";
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
