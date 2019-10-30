@@ -18,14 +18,16 @@ public class CreateMessageActiv extends Activity {
 
     public void onSendMessage(View view) {
         EditText editMessage = findViewById(R.id.message);
-        String messageText = editMessage.getText().toString();
-        //Intent intent = new Intent(this, ReceiveMessageActiv.class);
-        //intent.putExtra(ReceiveMessageActiv.EXTRA_MESSAGE, messageText);
+        String messageText = editMessage.getText().toString(); // получить введенный текст <EditText>
 
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Intent intent = new Intent(Intent.ACTION_SEND); // вызовет все активности, что могут делать отправку (SEND)
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, messageText);
-        startActivity(intent);
+        intent.putExtra(Intent.EXTRA_TEXT, messageText); // вложим в интент сообщение, котор получено из  <EditText>
+
+        String chooserTitle = getString(R.string.chooser); // getString - для получения строковых ресурсов
+        Intent chosenIntent = Intent.createChooser(intent, chooserTitle); // создать окно выбора из списка возмож приложений
+                                                                        // и добав Заглавие в предыдущем интенте (intent)
+        startActivity(chosenIntent);
 
     }
 }
