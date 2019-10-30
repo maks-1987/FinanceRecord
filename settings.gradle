@@ -1,0 +1,2 @@
+include ':app', ':fragment-all', ':beeradviser', ':mymessenger', ':stopwatch'
+rootProject.name='FinanceRecord'
