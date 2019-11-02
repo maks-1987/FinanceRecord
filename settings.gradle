@@ -1,2 +1,2 @@
-include ':app', ':fragment-all', ':beeradviser', ':mymessenger', ':stopwatch'
+include ':app', ':fragment-all', ':beeradviser', ':mymessenger', ':stopwatch', ':myconstraint'
 rootProject.name='FinanceRecord'
