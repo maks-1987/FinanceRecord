@@ -6,7 +6,7 @@ public class Drink {
     private int imageResourceId;
 
     // массив напитков
-    public static final Drink[] drinks = {
+    static final Drink[] drinks = {
             new Drink("Latte", "A couple whith milk", R.drawable.latte),
             new Drink("Capuccino", "Espresso hot milk", R.drawable.cappuccino),
             new Drink("Filter", "Highest and fresh", R.drawable.filter)
@@ -19,15 +19,15 @@ public class Drink {
         this.imageResourceId = imageResourceId;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public String getDescription() {
+    String getDescription() {
         return description;
     }
 
-    public int getImageResourceId() {
+    int getImageResourceId() {
         return imageResourceId;
     }
 
